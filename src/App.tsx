@@ -1,15 +1,14 @@
-import { Route, Routes } from "react-router-dom";
-import Lotofacil from "./components/Lotofacil";
-import Megasena from "./components/Megasena";
-import Quina from "./components/Quina";
-import Principal from "./pages/Principal";
+import styled from "styled-components";
+import Menu from "./components/Menu/Menu";
+import AppRoutes from "./routes/Routes";
 
 export default function App() {
+  const Style = styled.div``;
+
   return (
-    <Routes>
-      <Route path="/megasena" element={<Megasena />} />
-      <Route path="/lotofacil" element={<Lotofacil />} />
-      <Route path="/quina" element={<Quina />} />
-    </Routes>
+    <Style>
+      <Menu />
+      <AppRoutes />
+    </Style>
   );
 }

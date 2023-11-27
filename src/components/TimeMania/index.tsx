@@ -1,5 +1,5 @@
 import useLoteria from "../../hooks/useLoteria";
-import trevo from "../../assets/trevo-quina.png";
+import trevo from "../../assets/trevo-timemania.png";
 import { Carregando } from "../Carregando/Carregando";
 import { Principal } from "../Principal/Principal";
 import { Esquerda } from "../Esquerda/Esquerda";
@@ -13,8 +13,8 @@ import { NomeLoteria } from "../NomeLoteria/NomeLoteria";
 import { TextoEstimativa } from "../Estimativa/TextoEstimativa";
 import { ValorEstimativa } from "../Estimativa/ValorEstimativa";
 
-export default function Quina() {
-  const { quina: sorteio } = useLoteria();
+export default function TimeMania() {
+  const { timemania: sorteio } = useLoteria();
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function Quina() {
           <Esquerda>
             <BlocoLoteria>
               <img src={trevo} alt="trevo" />
-              <NomeLoteria>QUINA</NomeLoteria>
+              <NomeLoteria>TIMEMANIA</NomeLoteria>
             </BlocoLoteria>
             <Estimativa>
               <TextoEstimativa>
